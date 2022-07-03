@@ -93,7 +93,23 @@ body {
 
 /* Header */
 
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
     color: var(--tetli-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -103,6 +119,14 @@ body {
 
 .site-nav .link:hover, .site-nav .link:focus {
 color: var(--accent-color);
+}
+
+.mail-nav {
+    display: flex;
+}
+
+.mail-nav .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* Лого */
@@ -300,12 +324,21 @@ color: var(--accent-color);
     border-radius: 4px;
 }
 
+.clients-img1:hover, .clients-img1:focus {
+    border-color: var(--accent-color);
+}
+
 .clients-img2 {
     padding: 19px 65px;
     margin-top: 0;
     margin-bottom: 0;
     border: 1px solid var(--border-image);
     border-radius: 4px;
+}
+
+.clients-img2:hover,
+.clients-img2:focus {
+    border-color: var(--accent-color);
 }
 
 .clients-img3 {
@@ -316,12 +349,22 @@ color: var(--accent-color);
     border-radius: 4px;
 }
 
+.clients-img3:hover,
+.clients-img3:focus {
+    border-color: var(--accent-color);
+}
+
 .clients-img4 {
     padding: 24px 45px;
     margin-top: 0;
     margin-bottom: 0;
     border: 1px solid var(--border-image);
     border-radius: 4px;
+}
+
+.clients-img4:hover,
+.clients-img4:focus {
+    border-color: var(--accent-color);
 }
 
 .clients-img5 {
@@ -332,12 +375,22 @@ color: var(--accent-color);
     border-radius: 4px;
 }
 
+.clients-img5:hover,
+.clients-img5:focus {
+    border-color: var(--accent-color);
+}
+
 .clients-img6 {
     padding: 23px 41px;
     margin-top: 0;
     margin-bottom: 0;
     border: 1px solid var(--border-image);
     border-radius: 4px;
+}
+
+.clients-img6:hover,
+.clients-img6:focus {
+    border-color: var(--accent-color);
 }
 
 /* Фильтр */
