@@ -16,6 +16,7 @@
     --copyright-text-color: rgba(255, 255, 255, 0.6);
     --bg-box-card: #F5F4FA;
     --border-image: #AFB1B8;
+    --bg-footer: #2F303A;
 }
 
 ul {
@@ -93,6 +94,18 @@ body {
 
 /* Header */
 
+.logo {
+    margin-right: 86px;
+    color: var(--tetli-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
 .nav-item {
     display: flex;
     align-items: center;
@@ -123,23 +136,11 @@ color: var(--accent-color);
 
 .mail-nav {
     display: flex;
+    margin-left: auto;
 }
 
 .mail-nav .item:not(:last-child) {
     margin-right: 30px;
-}
-
-/* Лого */
-
-.logo {
-    color: var(--tetli-text-color);
-    font-family:'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-}
-
-.logo span {
-    color: var(--accent-color);
 }
 
 .mail-nav .link {
@@ -191,9 +192,14 @@ color: var(--accent-color);
     padding-bottom: 94px;
 }
 
-/* .advantages-list {
+.advantages-list {
+    display: flex;
+    justify-content: center;
+}
 
-} */
+.advantages-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .advantages-img {
     background: var(--bg-box-card);
@@ -220,8 +226,13 @@ color: var(--accent-color);
     padding-bottom: 94px;
 }
 
-.robots-list{
+.robots-list {
+    display: flex;
+    justify-content:center;
+}
 
+.robots-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .robots-title {
@@ -256,12 +267,19 @@ color: var(--accent-color);
 }
 
 .team-list{
-
+    display: flex;
+    justify-content:center;
 }
 
-/* .team-item {
-    background: var(--primary-white-color)
-} */
+.team-item {
+    background-color: var(--primary-white-color);
+    border-radius: 4px;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .team-title {
     padding-top: 0;
@@ -292,10 +310,32 @@ color: var(--accent-color);
 
 .team-text {
     padding-top: 0;
-    padding-bottom: 10px;
-
+    padding-bottom: 16px;
 
     text-align: center;
+}
+
+.team-nav {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 24px;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.social-link:hover, .social-link:focus {
+    background-color: var(--accent-color)
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 /* Постоянные клиенты */
@@ -316,81 +356,27 @@ color: var(--accent-color);
     text-align: center;
 }
 
-.clients-img1 {
-    padding: 21px 63px;
-    margin-top: 0;
-    margin-bottom: 0;
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
     border: 1px solid var(--border-image);
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.clients-img1:hover, .clients-img1:focus {
-    border-color: var(--accent-color);
+.clients-item:not(:last-child) {
+    margin-right: 30px;
 }
 
-.clients-img2 {
-    padding: 19px 65px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 1px solid var(--border-image);
-    border-radius: 4px;
-}
-
-.clients-img2:hover,
-.clients-img2:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-img3 {
-    padding: 24px 64px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 1px solid var(--border-image);
-    border-radius: 4px;
-}
-
-.clients-img3:hover,
-.clients-img3:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-img4 {
-    padding: 24px 45px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 1px solid var(--border-image);
-    border-radius: 4px;
-}
-
-.clients-img4:hover,
-.clients-img4:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-img5 {
-    padding: 21px 55px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 1px solid var(--border-image);
-    border-radius: 4px;
-}
-
-.clients-img5:hover,
-.clients-img5:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-img6 {
-    padding: 23px 41px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 1px solid var(--border-image);
-    border-radius: 4px;
-}
-
-.clients-img6:hover,
-.clients-img6:focus {
-    border-color: var(--accent-color);
+.clients-item:hover, .clients-item:focus {
+        border: 1px solid var(--accent-color);
 }
 
 /* Фильтр */
@@ -424,6 +410,10 @@ color: var(--accent-color);
 } */
 
 /* Footer */
+
+.footer {
+    background-color: var(--bg-footer);
+}
 
 .copy {
     font-style: normal;
