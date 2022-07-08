@@ -110,11 +110,11 @@ body {
     line-height: 1.19;
 }
 
-.logo span {
+.logo-span {
     color: var(--accent-color);
 }
 
-.nav-item {
+.header-nav {
     display: flex;
     align-items: center;
 }
@@ -122,11 +122,11 @@ body {
 .site-nav {
     display: flex;
 }
-.site-nav .item:not(:last-child) {
+.site-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav .link {
+.site-link {
     display: block;
     padding-top: 31px;
     padding-bottom: 31px;
@@ -138,8 +138,21 @@ body {
     letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-link:hover, .site-link:focus {
 color: var(--accent-color);
+}
+
+.site-links {
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: default;
 }
 
 .mail-nav {
@@ -147,11 +160,11 @@ color: var(--accent-color);
     margin-left: auto;
 }
 
-.mail-nav .item:not(:last-child) {
+.mail-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.mail-nav .link {
+.mail-link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -159,7 +172,7 @@ color: var(--accent-color);
     letter-spacing: 0.02em;
 }
 
-.mail-nav .link:hover, .mail-nav .link:focus {
+.mail-link:hover, .mail-link:focus {
     color: var(--accent-color)
 }
 
@@ -187,19 +200,6 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
 
 }
-
-/* Section */
-
-
-/* .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
-} */
 
 /* Преимущества */
 
@@ -403,6 +403,8 @@ color: var(--accent-color);
         border-color: var(--accent-color);
 }
 
+/* Страница 2 */
+
 /* Фильтр */
 
 .portfolio {
@@ -486,14 +488,6 @@ color: var(--accent-color);
     line-height: 1.56;
 }
 
-/* .filter {
-    color: var(--tetli-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-} */
-
 /* Footer */
 
 .footer {
@@ -513,6 +507,7 @@ color: var(--accent-color);
 
 .copi-mail > .logo {
     display: block;
+    margin-right: 0;
     margin-bottom: 20px;
     color: var(--primary-white-color);
 }
